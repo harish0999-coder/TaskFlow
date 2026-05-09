@@ -222,4 +222,4 @@ curl -X POST https://your-backend.railway.app/api/auth/signup \
 
 ## 📝 License
 
-MIT © 2025 TaskFlow
+Hari © 2026 TaskFlow
