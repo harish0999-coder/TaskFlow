@@ -1,0 +1,19 @@
+.team-stats { display:flex; gap:16px; margin-bottom:28px; }
+.team-stat { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:16px 24px; text-align:center; }
+.ts-val { display:block; font-family:var(--font-display); font-size:28px; font-weight:800; }
+.ts-label { font-size:12px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; }
+
+.team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
+.team-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; display:flex; align-items:flex-start; gap:14px; transition:var(--transition); }
+.team-card:hover { border-color:var(--border-light); }
+.tc-avatar { width:48px; height:48px; border-radius:50%; background:var(--accent-dim); border:2px solid var(--accent); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:16px; font-weight:700; color:var(--accent); flex-shrink:0; }
+.tc-info { flex:1; min-width:0; }
+.tc-name { font-size:14px; font-weight:600; margin-bottom:2px; display:flex; align-items:center; gap:6px; }
+.tc-email { font-size:12px; color:var(--text-muted); margin-bottom:8px; }
+.tc-meta { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.tc-joined { font-size:11px; color:var(--text-muted); }
+.you-tag { font-size:10px; background:var(--accent-dim); color:var(--accent); padding:1px 6px; border-radius:8px; font-weight:600; }
+.tc-actions { flex-shrink:0; }
+.role-select { background:var(--bg-hover); border:1px solid var(--border); border-radius:6px; padding:6px 10px; color:var(--text-primary); font-size:12px; cursor:pointer; }
+
+@media (max-width:600px) { .team-stats { flex-wrap:wrap; } .team-stat { flex:1; min-width:80px; } }
